@@ -9,7 +9,7 @@
 
     </div>
 
-    <div class="lg:col-start-4 col-end-10 lg:mr-6" style="max-width: 700px">
+    <div class=" lg:col-start-4 col-end-10 lg:mr-6" style="max-width: 700px">
 
         @include('_publish-tweet-panel')
 
