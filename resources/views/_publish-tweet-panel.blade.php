@@ -1,6 +1,6 @@
 <div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
 
-    <form method="POST" action="{{route('tweet.store')}}">
+    <form method="POST" action="{{route('tweets.store')}}">
         @csrf
 
         <textarea name="body" class="w-full outline-none" placeholder="what's up tweepy?"></textarea>

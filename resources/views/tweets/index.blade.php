@@ -26,7 +26,7 @@
 
     </div>
 
-    <div class="lg:col-start-10 col-end-12 bg-blue-100 rounded-lg p-4">
+    <div class="lg:col-start-10 col-end-12 ">
 
         @include('_friends-list')
 
