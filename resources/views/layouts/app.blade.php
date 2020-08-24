@@ -23,7 +23,7 @@
 
 <body>
     <div id="app">
-        <section class="px-8 py-4">
+        <section class="px-8 py-4 ml-6 mb-6">
 
             <header class="container mx-auto">
                 <h1>
