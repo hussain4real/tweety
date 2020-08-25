@@ -21,7 +21,9 @@ Auth::routes();
 
 
 
-Route::middleware('auth')->group( function () {
+Route::middleware('auth')->group( function() {
 
     Route::resource('/tweets', 'TweetController');
 });
+
+Route::get('/profiles/{user}', 'ProfileController@show')->name('profile');

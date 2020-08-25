@@ -2,13 +2,18 @@
 
     <div class="mr-2 flex-shrink-0">
 
-        <img src="{{$tweet->user->avatar}}" alt="John" class="rounded-full mr-2">
+        <a href="{{route('profile', $tweet->user)}}">
+
+            <img src="{{$tweet->user->avatar}}" alt="John" class="rounded-full mr-2" width="50" height="50">
+        </a>
 
     </div>
 
     <div>
 
-        <h5 class="font-bold mb-4">{{$tweet->user->name}}</h5>
+        <a href="{{route('profile', $tweet->user)}}">
+            <h5 class="font-bold mb-4">{{$tweet->user->name}}</h5>
+        </a>
         <p>{{$tweet->body}}</p>
 
     </div>
