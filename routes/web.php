@@ -19,6 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('tweet', 'TweetController');
+
+Route::middleware('auth')->group( function() {
+
+    Route::resource('/tweets', 'TweetController');
+    Route::post('/profiles/{user:name}/follow', 'FollowController@store');
+});
+
+Route::get('/profiles/{user:name}', 'ProfileController@show')->name('profile');
