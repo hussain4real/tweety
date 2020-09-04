@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app>
 <header class="mb-6 relative">
     <img src="/images/banner.png" alt="banner" class="rounded-md mb-2">
 
@@ -9,11 +7,11 @@
             <h2 class="font-bold text-2xl">{{ $user->name }}</h2>
             <p class="text-sm">Joined {{$user->created_at->diffForHumans()}}</p>
         </div>
-        <div>
+        <div class="flex">
             <a href="" class="rounded-full border border-gray-300 p-2 text-black focus:outline-none text-xs mr-2">Edit
                 Profile</a>
-            <a href="" class="bg-blue-500 rounded-full shadow py-2 px-4 text-white focus:outline-none text-xs">Follow
-                Me</a>
+           <x-follow-button :user="$user"></x-follow-button>
+
         </div>
     </div>
 
@@ -28,4 +26,4 @@
 @include('_timeline', [
 'tweets' =>$user->tweets
 ])
-@endsection
+</x-app>
