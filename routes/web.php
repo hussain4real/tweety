@@ -28,3 +28,4 @@ Route::middleware('auth')->group( function() {
 });
 
 Route::get('/profiles/{user:name}', 'ProfileController@show')->name('profile');
+Route::get('/profiles/{user:name}/edit', 'ProfileController@edit')->name('edit');

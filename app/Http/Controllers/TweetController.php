@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Tweet;
 use Illuminate\Http\Request;
 
-class TweetController extends Controller
-{
+class TweetController extends Controller {
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +16,7 @@ class TweetController extends Controller
     public function index()
     {
         return view('tweets.index', [
-            'tweets' => auth()->user()->timeline()
+            'tweets' => auth()->user()->timeline(),
         ]);
     }
 
@@ -32,26 +33,27 @@ class TweetController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store( Request $request )
     {
-        $attributes = request()->validate(['body' => 'required|max:255']);
+        $attributes = request()->validate([ 'body' => 'required|max:255' ]);
         Tweet::create([
             'user_id' => auth()->id(),
-            'body' => $attributes['body']
+            'body' => $attributes[ 'body' ],
         ]);
+
         return redirect('/tweets');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tweet  $tweet
+     * @param \App\Tweet $tweet
      * @return \Illuminate\Http\Response
      */
-    public function show(Tweet $tweet)
+    public function show( Tweet $tweet )
     {
         //
     }
@@ -59,10 +61,10 @@ class TweetController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tweet  $tweet
+     * @param \App\Tweet $tweet
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tweet $tweet)
+    public function edit( Tweet $tweet )
     {
         //
     }
@@ -70,11 +72,11 @@ class TweetController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tweet  $tweet
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Tweet $tweet
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tweet $tweet)
+    public function update( Request $request, Tweet $tweet )
     {
         //
     }
@@ -82,10 +84,10 @@ class TweetController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tweet  $tweet
+     * @param \App\Tweet $tweet
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tweet $tweet)
+    public function destroy( Tweet $tweet )
     {
         //
     }
