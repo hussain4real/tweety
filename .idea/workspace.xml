@@ -23,28 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42217ad2-1b6b-4d0f-b12f-90a0c35566cb" name="Default Changelist" comment="added follow and unfollow functionality and some refactoring">
-      <change afterPath="$PROJECT_DIR$/config/blade-icons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/blade-ui-kit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tweety.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tweety.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Followable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Followable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TweetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tweet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tweet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/blade-ui-kit.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/blade-ui-kit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_publish-tweet-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_publish-tweet-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_timeline.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_timeline.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_tweet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_tweet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/follow-button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/follow-button.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +88,6 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -154,7 +139,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
@@ -178,6 +162,9 @@
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-ui-kit" />
       <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-icons" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
     </include_path>
   </component>
   <component name="ProjectId" id="1geXvSi2ulpopOn4E21DHItxHsy" />
@@ -204,7 +191,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -245,6 +232,10 @@
       <workItem from="1599472750401" duration="3150000" />
       <workItem from="1599819819642" duration="2205000" />
       <workItem from="1599902273952" duration="11235000" />
+      <workItem from="1602058749347" duration="245000" />
+      <workItem from="1602059383872" duration="1608000" />
+      <workItem from="1602061808845" duration="721000" />
+      <workItem from="1602062625038" duration="4177000" />
     </task>
     <task id="LOCAL-00001" summary="added follow and unfollow functionality and some refactoring">
       <created>1599236370535</created>
@@ -289,18 +280,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="3" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1599235248386" />
+    <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602058809863">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1602058809863" />
     <state x="462" y="150" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1" timestamp="1599230297967">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="150" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1/0.0.1366.728@0.0.1366.728" timestamp="1599230297967" />
+    <state x="460" y="275" key="ComposerInitDialogKey" timestamp="1602060537096">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="460" y="275" key="ComposerInitDialogKey/0.0.1366.728@0.0.1366.728" timestamp="1602060537096" />
     <state x="514" y="85" key="NewPhpClassDialog" timestamp="1599229844852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="514" y="85" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1599229844852" />
-    <state x="184" y="0" width="1148" height="728" key="SettingsEditor" timestamp="1599474420233">
+    <state x="184" y="0" width="1148" height="728" key="SettingsEditor" timestamp="1602062740238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" width="1148" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599474420233" />
+    <state x="184" y="0" width="1148" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602062740238" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599040031668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
