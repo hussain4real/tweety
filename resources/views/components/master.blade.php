@@ -19,6 +19,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    @livewireStyles
+    @bukStyles(true)
 </head>
 
 <body>
@@ -34,6 +36,8 @@
 
     {{ $slot }}
 </div>
+@livewireScripts
+@bukScripts(true)
 </body>
 
 </html>

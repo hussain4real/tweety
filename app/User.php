@@ -40,7 +40,7 @@ class User extends Authenticatable
 
     public function getAvatarAttribute()
     {
-        return "https://i.pravatar.cc/200?u=".$this->email;
+        return "https://ui-avatars.com/api/?name=".$this->email;
     }
 
     public function timeline()
@@ -56,7 +56,7 @@ class User extends Authenticatable
 
     public function tweets()
     {
-        return $this->hasMany(Tweet::class);
+        return $this->hasMany(Tweet::class)->latest();
     }
 
 
